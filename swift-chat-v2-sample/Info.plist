@@ -20,6 +20,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Use media library to upload files to chat</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Use camera to upload files to chat</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Use microphone to upload files to chat</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Use photo library to upload files to chat</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
