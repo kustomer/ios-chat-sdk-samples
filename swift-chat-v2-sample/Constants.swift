@@ -23,7 +23,8 @@ struct Constants {
      In production this will come from your backend. For the sample app, we have a mock network call return the value hard-coded here, which you can generate online and replace every 15 minutes.
         1. To generate tokens, you will first need to get the secret key for your org. You can get the secret key by logging into your org in a browser and navigating to
           https://[YOUR_ORG_NAME].api.kustomerapp.com/v1/auth/customer/settings and copying the field named "secret"
-          Alternatively, you can use Postman and follow the instructions here to generate a new API key and then submit a GET request to the Kustomer API: https://jwt.io/#debugger-io?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZha2VAZW1haWwuY29tIiwiaWF0IjoxNjI4ODcyNTQ4fQ.xF2D-eut9cf-SN6u7-50WdPAFTptSeFaR7CTMTgTojo
+          Alternatively, you can use Postman and follow the instructions here to generate a new API key and then submit a GET request to the Kustomer API:
+          https://developer.kustomer.com/chat-sdk/v2-iOS/docs/authentication#step-1-generate-a-new-kustomer-api-key
           Note that the API key you use on Postman will NOT be same API key you use above for the app, because the permissions it needs are different.
           The API key to use chat SDK must have org.tracking role only, while the API key for requesting the secret key will need org.admin and org.user.
         2. Once you have your secret key, you can save it to generate all your future JWTs.
