@@ -15,7 +15,7 @@ struct Constants {
      https://developer.kustomer.com/chat-sdk/v2-iOS/docs#manually-generate-the-api-key
      Copy the token and paste it here.
      */
-    static let apiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMTJiOGYzZjVjNDgxMDA5NTBkNTAxYyIsInVzZXIiOiI2MTEyYjhlZTEwMGVkMDAwMTMyYjQ1MTciLCJvcmciOiI2MTExNjQ2MTMwY2U2ODczN2E3ZGMxYWEiLCJvcmdOYW1lIjoienp6LW1pcmFuZGEtc3RhZ2luZyIsInVzZXJUeXBlIjoibWFjaGluZSIsInBvZCI6InN0YWdpbmciLCJyb2xlcyI6WyJvcmcudHJhY2tpbmciXSwiYXVkIjoidXJuOmNvbnN1bWVyIiwiaXNzIjoidXJuOmFwaSIsInN1YiI6IjYxMTJiOGVlMTAwZWQwMDAxMzJiNDUxNyJ9.9QPnKsbPdf6CDl4oRJ671GZujGFFe6unQLdg1sE6BuY"
+    static let apiKey = "INSERT_YOUR_KEY"
 
     /**
      JSON Web Token

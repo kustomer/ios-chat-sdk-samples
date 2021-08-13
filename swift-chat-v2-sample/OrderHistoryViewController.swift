@@ -27,10 +27,6 @@ class OrderHistoryViewController: UIViewController, OrderCellDelegate, UITableVi
         self.user = MockAuth.shared.currentUser
     }
 
-    deinit {
-        print("DEINIT!")
-    }
-
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
