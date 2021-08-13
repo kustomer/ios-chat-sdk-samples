@@ -27,6 +27,10 @@ class OrderHistoryViewController: UIViewController, OrderCellDelegate, UITableVi
         self.user = MockAuth.shared.currentUser
     }
 
+    deinit {
+        print("DEINIT!")
+    }
+
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
@@ -63,10 +67,12 @@ class OrderHistoryViewController: UIViewController, OrderCellDelegate, UITableVi
     
     func logOutOfKustomer() {
         Kustomer.logOut { error in
-          if let error = error {
-            // TODO: show a toast
-            print("There was a problem \(error.localizedDescription)")
-          }
+            if let error = error {
+                // TODO: show a toast
+                ToastManager.showFailureToast("Error logging out of Kustomer chat: \(error.localizedDescription)")
+            } else {
+                ToastManager.showSuccessToast("Logged out of Kustomer chat")
+            }
         }
     }
 

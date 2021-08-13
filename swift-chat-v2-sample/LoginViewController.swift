@@ -38,10 +38,11 @@ class LoginViewController: UIViewController {
          */
         Kustomer.isLoggedIn(userEmail: email, userId: nil) { (result: Result<Bool, KError>) in
             guard case let .success(userIsLoggedIn) = result else {
-                // Show toast for kustomer login check failed
+                ToastManager.showFailureToast("Could not get Kustomer chat login status")
                 return
             }
             if userIsLoggedIn {
+                ToastManager.showSuccessToast("Already logged in to Kustomer chat")
                 return
             }
 
@@ -62,11 +63,9 @@ class LoginViewController: UIViewController {
                 Kustomer.logIn(jwt: jwt) { result in
                     switch result {
                     case .success:
-                        // Show a toast for Kustomer login success
-                        print("Login successful")
+                        ToastManager.showSuccessToast("Logged in to Kustomer chat")
                     case .failure(let error):
-                        // Show a toast for Kustomer login failure
-                        print("Login failed \(error.localizedDescription)")
+                        ToastManager.showFailureToast("Error logging in to Kustomer chat: \(error.localizedDescription)")
                     }
                 }
             }
