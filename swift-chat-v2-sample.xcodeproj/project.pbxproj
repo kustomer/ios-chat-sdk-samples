@@ -3,42 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		88FA6FCD26C44CA6004ED8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FCC26C44CA6004ED8BC /* AppDelegate.swift */; };
 		88FA6FCF26C44CA6004ED8BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FCE26C44CA6004ED8BC /* SceneDelegate.swift */; };
-		88FA6FD126C44CA6004ED8BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FD026C44CA6004ED8BC /* LoginViewController.swift */; };
+		88FA6FD126C44CA6004ED8BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FD026C44CA6004ED8BC /* ViewController.swift */; };
 		88FA6FD426C44CA6004ED8BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FA6FD226C44CA6004ED8BC /* Main.storyboard */; };
 		88FA6FD626C44CA6004ED8BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FA6FD526C44CA6004ED8BC /* Assets.xcassets */; };
 		88FA6FD926C44CA6004ED8BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FA6FD726C44CA6004ED8BC /* LaunchScreen.storyboard */; };
-		88FA6FE226C44D76004ED8BC /* kustomer-ios in Frameworks */ = {isa = PBXBuildFile; productRef = 88FA6FE126C44D76004ED8BC /* kustomer-ios */; };
-		88FA6FE426C46C4A004ED8BC /* OrderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FE326C46C4A004ED8BC /* OrderHistoryViewController.swift */; };
-		88FA6FE626C46EC5004ED8BC /* MockAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FE526C46EC5004ED8BC /* MockAuth.swift */; };
-		88FA6FE826C46FC0004ED8BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FE726C46FC0004ED8BC /* User.swift */; };
-		88FA6FEA26C476C1004ED8BC /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FE926C476C1004ED8BC /* MockAPIClient.swift */; };
-		88FA6FEC26C477BF004ED8BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FEB26C477BF004ED8BC /* Constants.swift */; };
-		88FA6FEE26C570B4004ED8BC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FED26C570B4004ED8BC /* Order.swift */; };
-		88FA6FF026C5871A004ED8BC /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FEF26C5871A004ED8BC /* OrderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		88FA6FC926C44CA6004ED8BC /* swift-chat-v2-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-chat-v2-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FA6FCC26C44CA6004ED8BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88FA6FCE26C44CA6004ED8BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		88FA6FD026C44CA6004ED8BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		88FA6FD026C44CA6004ED8BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88FA6FD326C44CA6004ED8BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88FA6FD526C44CA6004ED8BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88FA6FD826C44CA6004ED8BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88FA6FDA26C44CA6004ED8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88FA6FE326C46C4A004ED8BC /* OrderHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryViewController.swift; sourceTree = "<group>"; };
-		88FA6FE526C46EC5004ED8BC /* MockAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuth.swift; sourceTree = "<group>"; };
-		88FA6FE726C46FC0004ED8BC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		88FA6FE926C476C1004ED8BC /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
-		88FA6FEB26C477BF004ED8BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		88FA6FED26C570B4004ED8BC /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		88FA6FEF26C5871A004ED8BC /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +31,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FA6FE226C44D76004ED8BC /* kustomer-ios in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,19 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				88FA6FCC26C44CA6004ED8BC /* AppDelegate.swift */,
-				88FA6FD526C44CA6004ED8BC /* Assets.xcassets */,
-				88FA6FEB26C477BF004ED8BC /* Constants.swift */,
-				88FA6FDA26C44CA6004ED8BC /* Info.plist */,
-				88FA6FD026C44CA6004ED8BC /* LoginViewController.swift */,
-				88FA6FD726C44CA6004ED8BC /* LaunchScreen.storyboard */,
-				88FA6FD226C44CA6004ED8BC /* Main.storyboard */,
-				88FA6FE526C46EC5004ED8BC /* MockAuth.swift */,
-				88FA6FE926C476C1004ED8BC /* MockAPIClient.swift */,
-				88FA6FED26C570B4004ED8BC /* Order.swift */,
-				88FA6FEF26C5871A004ED8BC /* OrderCell.swift */,
-				88FA6FE326C46C4A004ED8BC /* OrderHistoryViewController.swift */,
 				88FA6FCE26C44CA6004ED8BC /* SceneDelegate.swift */,
-				88FA6FE726C46FC0004ED8BC /* User.swift */,
+				88FA6FD026C44CA6004ED8BC /* ViewController.swift */,
+				88FA6FD226C44CA6004ED8BC /* Main.storyboard */,
+				88FA6FD526C44CA6004ED8BC /* Assets.xcassets */,
+				88FA6FD726C44CA6004ED8BC /* LaunchScreen.storyboard */,
+				88FA6FDA26C44CA6004ED8BC /* Info.plist */,
 			);
 			path = "swift-chat-v2-sample";
 			sourceTree = "<group>";
@@ -106,9 +83,6 @@
 			dependencies = (
 			);
 			name = "swift-chat-v2-sample";
-			packageProductDependencies = (
-				88FA6FE126C44D76004ED8BC /* kustomer-ios */,
-			);
 			productName = "swift-chat-v2-sample";
 			productReference = 88FA6FC926C44CA6004ED8BC /* swift-chat-v2-sample.app */;
 			productType = "com.apple.product-type.application";
@@ -136,9 +110,6 @@
 				Base,
 			);
 			mainGroup = 88FA6FC026C44CA6004ED8BC;
-			packageReferences = (
-				88FA6FE026C44D76004ED8BC /* XCRemoteSwiftPackageReference "kustomer-ios" */,
-			);
 			productRefGroup = 88FA6FCA26C44CA6004ED8BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -166,16 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FA6FE426C46C4A004ED8BC /* OrderHistoryViewController.swift in Sources */,
-				88FA6FE626C46EC5004ED8BC /* MockAuth.swift in Sources */,
-				88FA6FF026C5871A004ED8BC /* OrderCell.swift in Sources */,
-				88FA6FE826C46FC0004ED8BC /* User.swift in Sources */,
-				88FA6FEE26C570B4004ED8BC /* Order.swift in Sources */,
-				88FA6FEA26C476C1004ED8BC /* MockAPIClient.swift in Sources */,
-				88FA6FD126C44CA6004ED8BC /* LoginViewController.swift in Sources */,
+				88FA6FD126C44CA6004ED8BC /* ViewController.swift in Sources */,
 				88FA6FCD26C44CA6004ED8BC /* AppDelegate.swift in Sources */,
 				88FA6FCF26C44CA6004ED8BC /* SceneDelegate.swift in Sources */,
-				88FA6FEC26C477BF004ED8BC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,25 +341,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		88FA6FE026C44D76004ED8BC /* XCRemoteSwiftPackageReference "kustomer-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kustomer/kustomer-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		88FA6FE126C44D76004ED8BC /* kustomer-ios */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 88FA6FE026C44D76004ED8BC /* XCRemoteSwiftPackageReference "kustomer-ios" */;
-			productName = "kustomer-ios";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88FA6FC126C44CA6004ED8BC /* Project object */;
 }
