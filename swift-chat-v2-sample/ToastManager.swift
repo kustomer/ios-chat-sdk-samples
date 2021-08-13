@@ -9,7 +9,16 @@ import UIKit
 
 class ToastManager {
 
-    static var visibleViewController: UIViewController? {
+    /*
+     Shared instance to be used on the main thread only
+     */
+    static let shared = ToastManager()
+
+    var isShowingToast = false
+
+    var toastQueue: [(String, Bool)] = []
+
+    var visibleViewController: UIViewController? {
         guard let window = UIApplication.shared.windows.filter({ $0.isKeyWindow }).first, let rootViewController = window.rootViewController else {
             return nil
         }
@@ -20,20 +29,42 @@ class ToastManager {
         return topViewController
     }
 
-    static func showSuccessToast(_ message: String) {
+    func showSuccessToast(_ message: String) {
+        if isShowingToast {
+            toastQueue.insert((message, true), at: 0)
+            return
+        }
         let toast = UIAlertController(title: "Success", message: message, preferredStyle: .actionSheet)
+        isShowingToast = true
         visibleViewController?.present(toast, animated: true) {
-            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: { (_) in
-                toast.dismiss(animated: true, completion: nil)
+            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: { [weak self] (_) in
+                self?.dismissAndShowNext(fromToast: toast)
             })
         }
     }
 
-    static func showFailureToast(_ message: String) {
+    func showFailureToast(_ message: String) {
+        if isShowingToast {
+            toastQueue.insert((message, false), at: 0)
+            return
+        }
         let toast = UIAlertController(title: "Error", message: message, preferredStyle: .actionSheet)
-        toast.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
-            toast.dismiss(animated: true, completion: nil)
+        toast.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] (_) in
+            self?.dismissAndShowNext(fromToast: toast)
         }))
+        isShowingToast = true
         visibleViewController?.present(toast, animated: true)
+    }
+
+    func dismissAndShowNext(fromToast toast: UIAlertController) {
+        toast.dismiss(animated: true) { [weak self] in
+            guard let strongSelf = self else {
+                return
+            }
+            strongSelf.isShowingToast = false
+            if let (nextMessage, isSuccess) = strongSelf.toastQueue.popLast() {
+                isSuccess ? strongSelf.showSuccessToast(nextMessage) : strongSelf.showFailureToast(nextMessage)
+            }
+        }
     }
 }
