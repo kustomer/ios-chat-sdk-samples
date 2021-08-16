@@ -36,10 +36,6 @@ class OrderHistoryViewController: UIViewController, OrderCellDelegate, UITableVi
 
     // MARK: - Kustomer
 
-    func describeCustomer() {
-        // TODO: implement this
-    }
-
     func openChat(forOrder order: Order) {
         if let conversationID = conversations[order.id] {
             // If we've opened a conversation for this order before, open the existing conversation
@@ -63,10 +59,11 @@ class OrderHistoryViewController: UIViewController, OrderCellDelegate, UITableVi
     
     func logOutOfKustomer() {
         Kustomer.logOut { error in
-          if let error = error {
-            // TODO: show a toast
-            print("There was a problem \(error.localizedDescription)")
-          }
+            if let error = error {
+                ToastManager.shared.showFailureToast("Error logging out of Kustomer chat: \(error.localizedDescription)")
+            } else {
+                ToastManager.shared.showSuccessToast("Logged out of Kustomer chat")
+            }
         }
     }
 
