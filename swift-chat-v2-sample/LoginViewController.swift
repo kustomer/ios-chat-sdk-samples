@@ -38,11 +38,15 @@ class LoginViewController: UIViewController {
          */
         Kustomer.isLoggedIn(userEmail: email, userId: nil) { (result: Result<Bool, KError>) in
             guard case let .success(userIsLoggedIn) = result else {
-                ToastManager.shared.showFailureToast("Could not get Kustomer chat login status")
+                DispatchQueue.main.async {
+                    ToastManager.shared.showFailureToast("Could not get Kustomer chat login status")
+                }
                 return
             }
             if userIsLoggedIn {
-                ToastManager.shared.showSuccessToast("Already logged in to Kustomer chat")
+                DispatchQueue.main.async {
+                    ToastManager.shared.showSuccessToast("Already logged in to Kustomer chat")
+                }
                 return
             }
 
@@ -63,7 +67,9 @@ class LoginViewController: UIViewController {
                 Kustomer.logIn(jwt: jwt) { result in
                     switch result {
                     case .success:
-                        ToastManager.shared.showSuccessToast("Logged in to Kustomer chat")
+                        DispatchQueue.main.async {
+                            ToastManager.shared.showSuccessToast("Logged in to Kustomer chat")
+                        }
 
                         /*
                          Now that we're logged in, we can add this email address to the Customer object of the customer logged into the chat.
@@ -72,16 +78,20 @@ class LoginViewController: UIViewController {
                          an externalId or a different email than the one here, which is why we make this call.
                          */
                         Kustomer.chatProvider.describeCurrentCustomer(email: email) { result in
-                            switch result {
-                            case .success:
-                                ToastManager.shared.showSuccessToast("Added email to Customer object")
-                            case .failure(let error):
-                                ToastManager.shared.showFailureToast("Failed to add email to Customer object: \(error.localizedDescription)")
+                            DispatchQueue.main.async {
+                                switch result {
+                                case .success:
+                                    ToastManager.shared.showSuccessToast("Added email to Customer object")
+                                case .failure(let error):
+                                    ToastManager.shared.showFailureToast("Failed to add email to Customer object: \(error.localizedDescription)")
+                                }
                             }
                         }
 
                     case .failure(let error):
-                        ToastManager.shared.showFailureToast("Error logging in to Kustomer chat: \(error.localizedDescription)")
+                        DispatchQueue.main.async {
+                            ToastManager.shared.showFailureToast("Error logging in to Kustomer chat: \(error.localizedDescription)")
+                        }
                     }
                 }
             }

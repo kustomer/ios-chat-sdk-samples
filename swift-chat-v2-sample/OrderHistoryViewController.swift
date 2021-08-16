@@ -50,8 +50,26 @@ class OrderHistoryViewController: UIViewController, OrderCellDelegate, UITableVi
         } else {
             // If this is the first time chatting about this order, open a new conversation and save it to the conversations map
             Kustomer.openNewConversation(initialMessages: ["How can I help with your order of \(order.description)?"], afterCreateConversation: { [weak self] (conversation: KUSConversation) in
-                if let conversationID = conversation.id {
-                    self?.conversations[order.id] = conversationID
+                // NOTE: this completion won't be called until you send a message!
+                guard let conversationID = conversation.id else {
+                    return
+                }
+                self?.conversations[order.id] = conversationID
+
+                /*
+                 Now the conversation has been created successfully, we can describe the conversation with the order number.
+                 NOTE: this call to describe WILL FAIL if you do not have a a custom attribute OrderId of type string defined for Conversations in your org.
+                 You can change this key and value to better fit your implementation.
+                 */
+                Kustomer.chatProvider.describeConversation(conversationId: conversationID, attributes: ["orderIdStr": "\(order.id)"]) { result in
+                    DispatchQueue.main.async {
+                        switch result {
+                        case .success:
+                            ToastManager.shared.showSuccessToast("Described conversation \(conversationID) with order number \(order.id)")
+                        case .failure(let error):
+                            ToastManager.shared.showFailureToast("Failed to describe conversation with order number: \(error.localizedDescription)")
+                        }
+                    }
                 }
             }, animated: true)
         }
@@ -59,10 +77,12 @@ class OrderHistoryViewController: UIViewController, OrderCellDelegate, UITableVi
     
     func logOutOfKustomer() {
         Kustomer.logOut { error in
-            if let error = error {
-                ToastManager.shared.showFailureToast("Error logging out of Kustomer chat: \(error.localizedDescription)")
-            } else {
-                ToastManager.shared.showSuccessToast("Logged out of Kustomer chat")
+            DispatchQueue.main.async {
+                if let error = error {
+                    ToastManager.shared.showFailureToast("Error logging out of Kustomer chat: \(error.localizedDescription)")
+                } else {
+                    ToastManager.shared.showSuccessToast("Logged out of Kustomer chat")
+                }
             }
         }
     }
