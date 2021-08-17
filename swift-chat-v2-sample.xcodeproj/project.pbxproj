@@ -22,6 +22,7 @@
 		88FA6FEE26C570B4004ED8BC /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FED26C570B4004ED8BC /* Order.swift */; };
 		88FA6FF026C5871A004ED8BC /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FEF26C5871A004ED8BC /* OrderCell.swift */; };
 		88FCC5FB26C7035E00F63D09 /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FCC5FA26C7035E00F63D09 /* ToastManager.swift */; };
+		88FCC5FD26CBFF1700F63D09 /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FCC5FC26CBFF1700F63D09 /* GuestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		88FA6FED26C570B4004ED8BC /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		88FA6FEF26C5871A004ED8BC /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		88FCC5FA26C7035E00F63D09 /* ToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
+		88FCC5FC26CBFF1700F63D09 /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				88FA6FCC26C44CA6004ED8BC /* AppDelegate.swift */,
 				88FA6FD526C44CA6004ED8BC /* Assets.xcassets */,
 				88FA6FEB26C477BF004ED8BC /* Constants.swift */,
+				88FCC5FC26CBFF1700F63D09 /* GuestViewController.swift */,
 				88FA6FDA26C44CA6004ED8BC /* Info.plist */,
 				88FA6FD026C44CA6004ED8BC /* LoginViewController.swift */,
 				88FA6FD726C44CA6004ED8BC /* LaunchScreen.storyboard */,
@@ -176,6 +179,7 @@
 				88FA6FEE26C570B4004ED8BC /* Order.swift in Sources */,
 				88FCC5FB26C7035E00F63D09 /* ToastManager.swift in Sources */,
 				88FA6FEA26C476C1004ED8BC /* MockAPIClient.swift in Sources */,
+				88FCC5FD26CBFF1700F63D09 /* GuestViewController.swift in Sources */,
 				88FA6FD126C44CA6004ED8BC /* LoginViewController.swift in Sources */,
 				88FA6FCD26C44CA6004ED8BC /* AppDelegate.swift in Sources */,
 				88FA6FCF26C44CA6004ED8BC /* SceneDelegate.swift in Sources */,

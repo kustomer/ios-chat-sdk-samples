@@ -15,7 +15,7 @@ struct Constants {
      https://developer.kustomer.com/chat-sdk/v2-iOS/docs#manually-generate-the-api-key
      Copy the token and paste it here.
      */
-    static let apiKey = "INSERT_YOUR_KEY"
+    static let apiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMTJiOGYzZjVjNDgxMDA5NTBkNTAxYyIsInVzZXIiOiI2MTEyYjhlZTEwMGVkMDAwMTMyYjQ1MTciLCJvcmciOiI2MTExNjQ2MTMwY2U2ODczN2E3ZGMxYWEiLCJvcmdOYW1lIjoienp6LW1pcmFuZGEtc3RhZ2luZyIsInVzZXJUeXBlIjoibWFjaGluZSIsInBvZCI6InN0YWdpbmciLCJyb2xlcyI6WyJvcmcudHJhY2tpbmciXSwiYXVkIjoidXJuOmNvbnN1bWVyIiwiaXNzIjoidXJuOmFwaSIsInN1YiI6IjYxMTJiOGVlMTAwZWQwMDAxMzJiNDUxNyJ9.9QPnKsbPdf6CDl4oRJ671GZujGFFe6unQLdg1sE6BuY"
 
     /**
      JSON Web Token
@@ -38,5 +38,5 @@ struct Constants {
         4. This JWT will be valid for 15 minutes from the iat value time, but when it expires you do not need to start over. If you leave the https://jwt.io/ window and
           https://www.epochconverter.com/ open, you can quickly get new JWTs by replacing only the iat value in PAYLOAD:DATA with the current epoch time.
      */
-    static let jwt = "INSERT_A_JWT"
+    static let jwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHRlcm5hbElkIjoiMjM0NTY3OCIsImlhdCI6MTYyOTE0MzUyMX0.jSxepHi2rwu-RL-MCe8iJ_uVFQVtEhhqjCvmhBS0cgk"
 }
