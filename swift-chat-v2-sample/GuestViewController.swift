@@ -107,6 +107,17 @@ class GuestViewController: UITableViewController, KUSChatListener {
     }
 
     private func setUpFooter() {
-        tableView.tableFooterView = UIView(frame: .zero)
+        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 100.0))
+        let returnToLogin = UIAction { [weak self] _ in
+            self?.dismiss(animated: true, completion: nil)
+        }
+        let logInButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 50), primaryAction: returnToLogin)
+        logInButton.setTitle("Return to Log In", for: .normal)
+        logInButton.setTitleColor(.systemBlue, for: .normal)
+        logInButton.translatesAutoresizingMaskIntoConstraints = false
+        footer.addSubview(logInButton)
+        logInButton.centerXAnchor.constraint(equalTo: footer.centerXAnchor).isActive = true
+        logInButton.centerYAnchor.constraint(equalTo: footer.centerYAnchor).isActive = true
+        tableView.tableFooterView = footer
     }
 }
