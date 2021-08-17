@@ -14,9 +14,9 @@ class ToastManager {
      */
     static let shared = ToastManager()
 
-    var isShowingToast = false
+    private var isShowingToast = false
 
-    var toastQueue: [(String, Bool)] = []
+    private var toastQueue: [(String, Bool)] = []
 
     var visibleViewController: UIViewController? {
         guard let window = UIApplication.shared.windows.filter({ $0.isKeyWindow }).first, let rootViewController = window.rootViewController else {
