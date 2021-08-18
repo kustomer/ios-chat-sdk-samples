@@ -83,11 +83,13 @@ class GuestViewController: UITableViewController, KUSChatListener {
         header.addSubview(title)
 
         unreadCount.text = "0 unread conversations"
+        unreadCount.font = title.font.withSize(14.0)
         unreadCount.textAlignment = .left
         unreadCount.translatesAutoresizingMaskIntoConstraints = false
         header.addSubview(unreadCount)
 
         activeCount.textAlignment = .right
+        activeCount.font = title.font.withSize(14.0)
         activeCount.translatesAutoresizingMaskIntoConstraints = false
         header.addSubview(activeCount)
 
