@@ -4,7 +4,7 @@ This sample app demonstrates the login and describe functionality available for 
 
 ## Running the Sample App
 
-To run the project, you'll need Xcode
+To run the project, you'll need Xcode 12+
 
 1. First, [clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) the [`ios-chat-sdk-samples`](https://github.com/kustomer/ios-chat-sdk-samples) repository.
 
