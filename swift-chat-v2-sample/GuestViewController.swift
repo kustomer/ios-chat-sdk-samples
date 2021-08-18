@@ -73,7 +73,7 @@ class GuestViewController: UITableViewController, KUSChatListener {
     // MARK: - Setup
 
     private func setUpHeader() {
-        let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 200))
+        let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 150))
 
         let title = UILabel(frame: .zero)
         title.text = "Kustomer Sample App"
@@ -94,12 +94,12 @@ class GuestViewController: UITableViewController, KUSChatListener {
         title.centerXAnchor.constraint(equalTo: header.centerXAnchor).isActive = true
         title.widthAnchor.constraint(equalTo: header.widthAnchor).isActive = true
         unreadCount.leadingAnchor.constraint(equalTo: header.leadingAnchor, constant: 16.0).isActive = true
-        unreadCount.widthAnchor.constraint(equalTo: header.widthAnchor, multiplier: 0.5).isActive = true
+        unreadCount.widthAnchor.constraint(equalTo: header.widthAnchor, multiplier: 0.4).isActive = true
         unreadCount.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         unreadCount.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 16.0).isActive = true
         unreadCount.bottomAnchor.constraint(equalTo: header.bottomAnchor, constant: -16.0).isActive = true
         activeCount.trailingAnchor.constraint(equalTo: header.trailingAnchor, constant: -16.0).isActive = true
-        activeCount.widthAnchor.constraint(equalTo: header.widthAnchor, multiplier: 0.5).isActive = true
+        activeCount.widthAnchor.constraint(equalTo: header.widthAnchor, multiplier: 0.4).isActive = true
         activeCount.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         activeCount.bottomAnchor.constraint(equalTo: header.bottomAnchor, constant: -16.0).isActive = true
         
