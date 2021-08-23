@@ -71,7 +71,8 @@ class OrderHistoryViewController: UIViewController, OrderCellDelegate, UITableVi
                         }
                     }
                 }
-            }, animated: true)
+            }, animated: false)
+            
         }
     }
     
