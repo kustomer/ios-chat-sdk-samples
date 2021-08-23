@@ -36,7 +36,7 @@ The Login screen allows a customer to either:
 
 After a successful login, the user is logged into Kustomer Chat, and a describe call is made to add the provided email address to the Customer object of the customer logged into the chat, since it may be different from the email or externalId used to create the JWT for login.
 
-![LoginScreen](/swift-chat-v2-sample/Screenshots/Login.png?raw=true "Login Screen")
+![LoginScreen](./swift-chat-v2-sample/Screenshots/Login.png?raw=true "Login Screen")
 
 #### Order History Screen - `OrderHistoryViewController.swift`
 The Order History screen:
@@ -47,7 +47,7 @@ The Order History screen:
 - Creates an in-memory map of the order number to the conversation ID
     - The first tap on Get Help opens a new conversation, but subsequent taps open the existing conversation for that order
 
-![OrderHistoryScreen](/swift-chat-v2-sample/Screenshots/OrderHistory.png?raw=true "Order History Screen")
+![OrderHistoryScreen](./swift-chat-v2-sample/Screenshots/OrderHistory.png?raw=true "Order History Screen")
 
 #### Guest Screen
 The Guest screen shows basic interactions with the Kustomer SDK:
@@ -58,4 +58,4 @@ The Guest screen shows basic interactions with the Kustomer SDK:
 - Open the Kustomer Chat widget with Knowledge Base only, regardless of the Chat Widget Experience settings for your organization
 - Putting your device in dark mode will change all UI to dark mode.
 
-![GuestScreen](/swift-chat-v2-sample/Screenshots/Guest.png?raw=true "Guest Screen")
+![GuestScreen](./swift-chat-v2-sample/Screenshots/Guest.png?raw=true "Guest Screen")
