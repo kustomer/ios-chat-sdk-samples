@@ -97,5 +97,10 @@ class LoginViewController: UIViewController {
             }
         }
     }
+
+    @IBAction func didTapGuestButton(_ sender: Any) {
+        // TODO: implement this
+        print("Continue as guest")
+    }
 }
 

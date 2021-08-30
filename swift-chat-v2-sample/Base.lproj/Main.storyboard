@@ -61,6 +61,7 @@
                                 <state key="normal" title="Continue as a Guest"/>
                                 <connections>
                                     <action selector="didTapContinueAsGuestButton:" destination="Hsw-I9-aez" eventType="touchUpInside" id="RAS-3e-Kt8"/>
+                                    <action selector="didTapGuestButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ejh-fZ-uMD"/>
                                     <segue destination="vAN-fO-fQu" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="2lD-sR-EY5"/>
                                 </connections>
                             </button>
