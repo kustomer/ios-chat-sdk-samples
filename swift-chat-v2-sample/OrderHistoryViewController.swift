@@ -39,7 +39,7 @@ class OrderHistoryViewController: UIViewController, OrderCellDelegate, UITableVi
     func openChat(forOrder order: Order) {
         if let conversationID = conversations[order.id] {
             // If we've opened a conversation for this order before, open the existing conversation
-            Kustomer.openConversation(id: conversationID, animated: true) { (result: Result<KUSConversation, KError>) in
+            Kustomer.openConversation(id: conversationID, animated: false) { (result: Result<KUSConversation, KError>) in
                 switch result {
                 case .success(let conversation):
                     print("Opened conversation with id \(conversation.id ?? "not found")")
@@ -71,7 +71,7 @@ class OrderHistoryViewController: UIViewController, OrderCellDelegate, UITableVi
                         }
                     }
                 }
-            }, animated: true)
+            }, animated: false)
         }
     }
     
