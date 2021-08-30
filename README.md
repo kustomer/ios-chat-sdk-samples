@@ -1,7 +1,7 @@
 # ios-chat-sdk-samples
 A repository to hold sample apps using the Kustomer Chat SDK v2
 
-- [swift_chat_v2_sample](https://github.com/kustomer/ios-chat-sdk-samples/tree/main/swift-chat-v2-sample): Sample app writen in Swift that highlights using the Kustomer Chat SDK.
+- [swift_chat_v2_sample](https://github.com/kustomer/ios-chat-sdk-samples/tree/main/chat-v2-sample): Sample app writen in Swift that highlights using the Kustomer Chat SDK.
 
 
 Requirements
