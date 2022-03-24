@@ -6,8 +6,17 @@
         "repositoryURL": "https://github.com/kustomer/kustomer-ios",
         "state": {
           "branch": null,
-          "revision": "cb0c7a380af962cdd5690a2ef558065491101fa7",
-          "version": "2.5.3"
+          "revision": "21bd2becb863557f12926d5d79b03d7cd3aa36eb",
+          "version": "2.6.0"
+        }
+      },
+      {
+        "package": "PubNub",
+        "repositoryURL": "https://github.com/pubnub/swift.git",
+        "state": {
+          "branch": null,
+          "revision": "749fdf14c40eaa53ecb9ffdd7df7c801a7669144",
+          "version": "5.1.0"
         }
       }
     ]
