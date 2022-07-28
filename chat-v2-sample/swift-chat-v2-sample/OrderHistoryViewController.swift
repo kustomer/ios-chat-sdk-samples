@@ -49,7 +49,9 @@ class OrderHistoryViewController: UIViewController, OrderCellDelegate, UITableVi
             }
         } else {
             // If this is the first time chatting about this order, open a new conversation and save it to the conversations map
-            Kustomer.openNewConversation(initialMessages: ["How can I help with your order of \(order.description)?"], afterCreateConversation: { [weak self] (conversation: KUSConversation) in
+            let initialMessage = KUSInitialMessage(body: "How can I help with your order of \(order.description)?", direction: .agent)
+            Kustomer.startNewConversation(initialMessage: initialMessage,
+                                          afterCreateConversation: { [weak self] (conversation: KUSConversation) in
                 // NOTE: this completion won't be called until you send a message!
                 guard let conversationID = conversation.id else {
                     return
