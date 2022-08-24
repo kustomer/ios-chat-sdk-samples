@@ -1,25 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "kustomer-ios",
-        "repositoryURL": "https://github.com/kustomer/kustomer-ios",
-        "state": {
-          "branch": null,
-          "revision": "21bd2becb863557f12926d5d79b03d7cd3aa36eb",
-          "version": "2.6.0"
-        }
-      },
-      {
-        "package": "PubNub",
-        "repositoryURL": "https://github.com/pubnub/swift.git",
-        "state": {
-          "branch": null,
-          "revision": "749fdf14c40eaa53ecb9ffdd7df7c801a7669144",
-          "version": "5.1.0"
-        }
+  "pins" : [
+    {
+      "identity" : "kustomer-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kustomer/kustomer-ios",
+      "state" : {
+        "revision" : "96c18e6b7619dac6c37242b616da9d13e90c68f9",
+        "version" : "2.7.2"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pubnub/swift.git",
+      "state" : {
+        "revision" : "749fdf14c40eaa53ecb9ffdd7df7c801a7669144",
+        "version" : "5.1.0"
+      }
+    }
+  ],
+  "version" : 2
 }

@@ -29,8 +29,12 @@ class GuestViewController: UITableViewController, KUSChatListener {
         listenerHandle = Kustomer.chatProvider.addChatListener(self)
 
         // Update the active conversations count
-        let count = Kustomer.chatProvider.openConversationCount()
-        activeCount.text = "\(count) active conversations"
+        Kustomer.chatProvider.getOpenConversationCount { [weak self] result in
+            guard case .success(let count) = result else {
+                return
+            }
+            self?.activeCount.text = "\(count) active conversations"
+        }
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -55,10 +59,14 @@ class GuestViewController: UITableViewController, KUSChatListener {
     }
 
     @IBAction func openNewChat(_ sender: Any) {
-        Kustomer.openNewConversation(afterCreateConversation: { [weak self] _ in
+        Kustomer.startNewConversation(afterCreateConversation: { [weak self] _ in
             // Update the active conversation count when we've opened a new conversation
-            let count = Kustomer.chatProvider.openConversationCount()
-            self?.activeCount.text = "\(count) active conversations"
+            Kustomer.chatProvider.getOpenConversationCount() { result in
+              guard case .success(let count) = result else {
+                  return
+              }
+              self?.activeCount.text = "\(count) active conversations"
+          }
         }, animated: true)
     }
 
