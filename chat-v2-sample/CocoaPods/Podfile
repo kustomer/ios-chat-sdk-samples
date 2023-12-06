@@ -7,4 +7,5 @@ target 'swift-chat-v2-sample' do
 
   # Pods for swift-chat-v2-sample
   pod 'KustomerChat', '~> 3.1.0'
+  # UNCOMMENT THIS IF TESTING FROM BRANCH: pod 'KustomerChat', :git => 'https://github.com/kustomer/kustomer-ios.git', :branch => 'releases/3.1.0'
 end
