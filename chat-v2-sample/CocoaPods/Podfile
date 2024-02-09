@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+# platform :ios, '12.0'
 
 target 'swift-chat-v2-sample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for swift-chat-v2-sample
-  pod 'KustomerChat', '~> 3.1.1'
-  # UNCOMMENT THIS IF TESTING FROM BRANCH: pod 'KustomerChat', :git => 'https://github.com/kustomer/kustomer-ios.git', :branch => 'releases/3.1.1'
+  pod 'KustomerChat', '~> 4.0.0'
+  # UNCOMMENT THIS IF TESTING FROM BRANCH: pod 'KustomerChat', :git => 'https://github.com/kustomer/kustomer-ios.git', :branch => 'releases/4.0.0'
 end
