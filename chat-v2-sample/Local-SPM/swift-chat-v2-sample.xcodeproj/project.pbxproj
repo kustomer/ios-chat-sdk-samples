@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50F727A92880A6C80086A6AF /* kustomer-ios in Frameworks */ = {isa = PBXBuildFile; productRef = 50F727A82880A6C80086A6AF /* kustomer-ios */; };
+		6A4C0FA92B4ED59A00D84608 /* kustomer-ios in Frameworks */ = {isa = PBXBuildFile; productRef = 6A4C0FA82B4ED59A00D84608 /* kustomer-ios */; };
+		6AAB7E252B598C3100BF9EE6 /* kustomer-ios in Frameworks */ = {isa = PBXBuildFile; productRef = 6AAB7E242B598C3100BF9EE6 /* kustomer-ios */; };
 		88FA6FCD26C44CA6004ED8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FCC26C44CA6004ED8BC /* AppDelegate.swift */; };
 		88FA6FCF26C44CA6004ED8BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FCE26C44CA6004ED8BC /* SceneDelegate.swift */; };
 		88FA6FD126C44CA6004ED8BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FD026C44CA6004ED8BC /* LoginViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A17844C2B5992B3008744CF /* swift-chat-v2-sample.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = "swift-chat-v2-sample.entitlements"; path = "../../Shared/swift-chat-v2-sample.entitlements"; sourceTree = "<group>"; };
 		88FA6FC926C44CA6004ED8BC /* swift-chat-v2-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-chat-v2-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FA6FCC26C44CA6004ED8BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88FA6FCE26C44CA6004ED8BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F727A92880A6C80086A6AF /* kustomer-ios in Frameworks */,
+				6AAB7E252B598C3100BF9EE6 /* kustomer-ios in Frameworks */,
+				6A4C0FA92B4ED59A00D84608 /* kustomer-ios in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,7 @@
 		88FA6FCB26C44CA6004ED8BC /* swift-chat-v2-sample */ = {
 			isa = PBXGroup;
 			children = (
+				6A17844C2B5992B3008744CF /* swift-chat-v2-sample.entitlements */,
 				88FA6FCC26C44CA6004ED8BC /* AppDelegate.swift */,
 				88FA6FD526C44CA6004ED8BC /* Assets.xcassets */,
 				88FA6FEB26C477BF004ED8BC /* Constants.swift */,
@@ -113,7 +117,8 @@
 			);
 			name = "swift-chat-v2-sample";
 			packageProductDependencies = (
-				50F727A82880A6C80086A6AF /* kustomer-ios */,
+				6A4C0FA82B4ED59A00D84608 /* kustomer-ios */,
+				6AAB7E242B598C3100BF9EE6 /* kustomer-ios */,
 			);
 			productName = "swift-chat-v2-sample";
 			productReference = 88FA6FC926C44CA6004ED8BC /* swift-chat-v2-sample.app */;
@@ -143,7 +148,7 @@
 			);
 			mainGroup = 88FA6FC026C44CA6004ED8BC;
 			packageReferences = (
-				50F727A72880A6C80086A6AF /* XCRemoteSwiftPackageReference "kustomer-ios" */,
+				6AAB7E232B598C3100BF9EE6 /* XCLocalSwiftPackageReference "../../../../Desktop/local-framework/kustomer-ios" */,
 			);
 			productRefGroup = 88FA6FCA26C44CA6004ED8BC /* Products */;
 			projectDirPath = "";
@@ -242,6 +247,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "swift-chat-v2-sample/swift-chat-v2-sample.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "swift-chat-v2-sample/swift-chat-v2-sample.entitlements";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -303,6 +310,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "swift-chat-v2-sample/swift-chat-v2-sample.entitlements";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -330,6 +338,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swift-chat-v2-sample/swift-chat-v2-sample.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "swift-chat-v2-sample/swift-chat-v2-sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FZVMKN4JP4;
 				INFOPLIST_FILE = "swift-chat-v2-sample/Info.plist";
@@ -349,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swift-chat-v2-sample/swift-chat-v2-sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FZVMKN4JP4;
 				INFOPLIST_FILE = "swift-chat-v2-sample/Info.plist";
@@ -386,21 +397,20 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		50F727A72880A6C80086A6AF /* XCRemoteSwiftPackageReference "kustomer-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kustomer/kustomer-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		6AAB7E232B598C3100BF9EE6 /* XCLocalSwiftPackageReference "../../../../Desktop/local-framework/kustomer-ios" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../../Desktop/local-framework/kustomer-ios";
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		50F727A82880A6C80086A6AF /* kustomer-ios */ = {
+		6A4C0FA82B4ED59A00D84608 /* kustomer-ios */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 50F727A72880A6C80086A6AF /* XCRemoteSwiftPackageReference "kustomer-ios" */;
+			productName = "kustomer-ios";
+		};
+		6AAB7E242B598C3100BF9EE6 /* kustomer-ios */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = "kustomer-ios";
 		};
 /* End XCSwiftPackageProductDependency section */

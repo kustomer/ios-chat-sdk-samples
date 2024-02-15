@@ -2,6 +2,18 @@
 
 This sample app demonstrates the login and describe functionality available for [Kustomer Chat 2.0](https://help.kustomer.com/introduction-kustomer-chat-H1xk1Gb8v) in the [Kustomer iOS Chat SDK](https://developer.kustomer.com/chat-sdk/v2-iOS/docs).
 
+## SPM (remote or local) or CocoaPods
+This app can be run using dependency, `KustomerChat`, from either `SPM` or `CocoaPods`. The `Shared` directory is sim-linked into both `SPM` and `CocoaPods`, because it is re-useable and DOES NOT change.
+
+### To run with SPM remote
+Just open the Xcode project inside the `Remote-SPM` directory.
+
+### To run with SPM local
+Just open the Xcode project inside the `Local-SPM` directory. NOTE: YOU MUST have the local version of the framework exported (via `fastlane prepare_frameowrk_locally`) to your desktop as `local-framework`
+
+### To run with CocoaPods
+Open the Xcode workspace file in the `CocoaPods` directory.
+
 ## Running the Sample App
 
 To run the project, you'll need Xcode 12+
