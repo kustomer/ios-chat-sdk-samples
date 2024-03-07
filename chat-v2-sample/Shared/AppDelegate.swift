@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Make sure to do this in your app delegate!
     let options = KustomerOptions()
     options.logLevels = [.debug, .error]
+    options.pushEnvironment = .development
     _ = Kustomer.configure(apiKey: Constants.apiKey, options: options, launchOptions: launchOptions)
     return true
   }
