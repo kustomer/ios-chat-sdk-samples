@@ -77,6 +77,10 @@ class GuestViewController: UITableViewController, KUSChatListener {
     @IBAction func openKBOnly(_ sender: Any) {
         Kustomer.show(preferredView: .onlyKnowledgeBase)
     }
+  
+  @IBAction func requestPushAuthorization(_ sender: Any) {
+      Kustomer.requestAuthorizationForPush()
+  }
 
     // MARK: - Setup
 
