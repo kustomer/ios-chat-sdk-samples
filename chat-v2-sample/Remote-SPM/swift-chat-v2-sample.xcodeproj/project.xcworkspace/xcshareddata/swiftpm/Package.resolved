@@ -1,14 +1,15 @@
 {
+  "originHash" : "91a75fa8146809ca62bafa49738f0bebacadf9e94aded4de067afd4d22bc4da8",
   "pins" : [
     {
       "identity" : "kustomer-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kustomer/kustomer-ios",
       "state" : {
-        "revision" : "53b35488b31eede114dfacdc655a0f58d631c5ce",
-        "version" : "4.0.1"
+        "revision" : "9159723fc5f081bdd5b0bb6d0df58d7bd83c3653",
+        "version" : "4.0.2"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
