@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A14E9402BCF259F0043883C /* kustomer-ios in Frameworks */ = {isa = PBXBuildFile; productRef = 6A14E93F2BCF259F0043883C /* kustomer-ios */; };
 		88FA6FCD26C44CA6004ED8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FCC26C44CA6004ED8BC /* AppDelegate.swift */; };
 		88FA6FCF26C44CA6004ED8BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FCE26C44CA6004ED8BC /* SceneDelegate.swift */; };
 		88FA6FD126C44CA6004ED8BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FD026C44CA6004ED8BC /* LoginViewController.swift */; };
@@ -50,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A14E9402BCF259F0043883C /* kustomer-ios in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +115,7 @@
 			);
 			name = "swift-chat-v2-sample";
 			packageProductDependencies = (
+				6A14E93F2BCF259F0043883C /* kustomer-ios */,
 			);
 			productName = "swift-chat-v2-sample";
 			productReference = 88FA6FC926C44CA6004ED8BC /* swift-chat-v2-sample.app */;
@@ -142,7 +145,7 @@
 			);
 			mainGroup = 88FA6FC026C44CA6004ED8BC;
 			packageReferences = (
-				6AA03DD12BBC5C0800762348 /* XCRemoteSwiftPackageReference "kustomer-ios" */,
+				6A14E93E2BCF259F0043883C /* XCRemoteSwiftPackageReference "kustomer-ios" */,
 			);
 			productRefGroup = 88FA6FCA26C44CA6004ED8BC /* Products */;
 			projectDirPath = "";
@@ -388,15 +391,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6AA03DD12BBC5C0800762348 /* XCRemoteSwiftPackageReference "kustomer-ios" */ = {
+		6A14E93E2BCF259F0043883C /* XCRemoteSwiftPackageReference "kustomer-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kustomer/kustomer-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.3;
+				minimumVersion = 4.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A14E93F2BCF259F0043883C /* kustomer-ios */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A14E93E2BCF259F0043883C /* XCRemoteSwiftPackageReference "kustomer-ios" */;
+			productName = "kustomer-ios";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88FA6FC126C44CA6004ED8BC /* Project object */;
 }
