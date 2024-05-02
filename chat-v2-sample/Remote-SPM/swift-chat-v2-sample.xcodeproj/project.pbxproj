@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AB365DF2BD7EBA500D66D92 /* kustomer-ios in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB365DE2BD7EBA500D66D92 /* kustomer-ios */; };
+		6AA5B3C02BE4096A00CC12AA /* kustomer-ios in Frameworks */ = {isa = PBXBuildFile; productRef = 6AA5B3BF2BE4096A00CC12AA /* kustomer-ios */; };
 		88FA6FCD26C44CA6004ED8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FCC26C44CA6004ED8BC /* AppDelegate.swift */; };
 		88FA6FCF26C44CA6004ED8BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FCE26C44CA6004ED8BC /* SceneDelegate.swift */; };
 		88FA6FD126C44CA6004ED8BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA6FD026C44CA6004ED8BC /* LoginViewController.swift */; };
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AB365DF2BD7EBA500D66D92 /* kustomer-ios in Frameworks */,
+				6AA5B3C02BE4096A00CC12AA /* kustomer-ios in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 			);
 			name = "swift-chat-v2-sample";
 			packageProductDependencies = (
-				6AB365DE2BD7EBA500D66D92 /* kustomer-ios */,
+				6AA5B3BF2BE4096A00CC12AA /* kustomer-ios */,
 			);
 			productName = "swift-chat-v2-sample";
 			productReference = 88FA6FC926C44CA6004ED8BC /* swift-chat-v2-sample.app */;
@@ -145,7 +145,7 @@
 			);
 			mainGroup = 88FA6FC026C44CA6004ED8BC;
 			packageReferences = (
-				6AB365DD2BD7EBA500D66D92 /* XCRemoteSwiftPackageReference "kustomer-ios" */,
+				6AA5B3BE2BE4096A00CC12AA /* XCRemoteSwiftPackageReference "kustomer-ios" */,
 			);
 			productRefGroup = 88FA6FCA26C44CA6004ED8BC /* Products */;
 			projectDirPath = "";
@@ -391,20 +391,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6AB365DD2BD7EBA500D66D92 /* XCRemoteSwiftPackageReference "kustomer-ios" */ = {
+		6AA5B3BE2BE4096A00CC12AA /* XCRemoteSwiftPackageReference "kustomer-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kustomer/kustomer-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.1.0;
+				minimumVersion = 4.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6AB365DE2BD7EBA500D66D92 /* kustomer-ios */ = {
+		6AA5B3BF2BE4096A00CC12AA /* kustomer-ios */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6AB365DD2BD7EBA500D66D92 /* XCRemoteSwiftPackageReference "kustomer-ios" */;
+			package = 6AA5B3BE2BE4096A00CC12AA /* XCRemoteSwiftPackageReference "kustomer-ios" */;
 			productName = "kustomer-ios";
 		};
 /* End XCSwiftPackageProductDependency section */

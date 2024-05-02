@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kustomer/kustomer-ios",
       "state" : {
-        "revision" : "dca36b2bf1d66081ae57c9c2cbf7cb7181631937",
-        "version" : "4.1.0"
+        "revision" : "ace78e85ea030d927e9ad7fc68aa2758cc518603",
+        "version" : "4.1.1"
       }
     }
   ],
