@@ -1,13 +1,13 @@
 {
-  "originHash" : "91a75fa8146809ca62bafa49738f0bebacadf9e94aded4de067afd4d22bc4da8",
+  "originHash" : "3153780794d003ea2baf2d9c59105d48d20d7511db16e059c4fb2e58f4063915",
   "pins" : [
     {
-      "identity" : "kustomer-ios",
+      "identity" : "kustomer-ios-spm",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/kustomer/kustomer-ios",
+      "location" : "https://github.com/kustomer/kustomer-ios-spm",
       "state" : {
-        "revision" : "ace78e85ea030d927e9ad7fc68aa2758cc518603",
-        "version" : "4.1.1"
+        "revision" : "cedb56243d1aa869de84f126a70bbaf927af6c4c",
+        "version" : "4.1.2"
       }
     }
   ],
