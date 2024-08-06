@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kustomer/kustomer-ios-spm",
       "state" : {
-        "revision" : "beab506b674d64e27939e7f4f1b3c090600d831e",
-        "version" : "4.1.5"
+        "revision" : "a7d59f79fcc456acd5bb4e66d8ff378d25f462c0",
+        "version" : "4.1.6"
       }
     }
   ],
