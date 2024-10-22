@@ -6,8 +6,7 @@ target 'swift-chat-v2-sample' do
   use_frameworks!
 
   # Pods for swift-chat-v2-sample
-  pod 'KustomerChat', '~> 5.0.2'
-  # UNCOMMENT THIS IF TESTING FROM BRANCH: pod 'KustomerChat', :git => 'https://github.com/kustomer/kustomer-ios.git', :branch => 'releases/5.0.2'
+  pod 'KustomerChat', '~> 5.0.3'
 end
 
 post_install do |installer|
