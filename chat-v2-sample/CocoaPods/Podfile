@@ -6,7 +6,7 @@ target 'swift-chat-v2-sample' do
   use_frameworks!
 
   # Pods for swift-chat-v2-sample
-  pod 'KustomerChat', '~> 5.0.8'
+  pod 'KustomerChat', '~> 5.0.9'
 end
 
 post_install do |installer|
