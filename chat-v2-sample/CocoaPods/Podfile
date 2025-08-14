@@ -6,13 +6,5 @@ target 'swift-chat-v2-sample' do
   use_frameworks!
 
   # Pods for swift-chat-v2-sample
-  pod 'KustomerChat', '~> 5.0.14'
-end
-
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
-    end
-  end
+  pod 'KustomerChat', '~> 6.0.0'
 end
