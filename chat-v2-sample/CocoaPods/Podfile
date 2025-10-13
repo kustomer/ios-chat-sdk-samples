@@ -6,5 +6,5 @@ target 'swift-chat-v2-sample' do
   use_frameworks!
 
   # Pods for swift-chat-v2-sample
-  pod 'KustomerChat', '~> 6.1.1'
+  pod 'KustomerChat', '~> 6.1.2'
 end
