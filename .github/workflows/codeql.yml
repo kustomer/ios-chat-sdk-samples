@@ -17,11 +17,21 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'swift' ]
+        language: [ 'ruby' ]
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+
+    - name: Validate Podfile syntax
+      working-directory: chat-v2-sample/CocoaPods
+      run: |
+        ruby -c Podfile
+
+    - name: Validate pod install
+      working-directory: chat-v2-sample/CocoaPods
+      run: |
+        pod install --repo-update
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v4
@@ -30,9 +40,6 @@ jobs:
         ram: 8192
         threads: 4
         source-root: chat-v2-sample/CocoaPods
-
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v4
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v4
