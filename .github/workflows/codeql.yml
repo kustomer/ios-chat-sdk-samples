@@ -1,4 +1,4 @@
-name: "CodeQL"
+name: "Validate Podfile"
 
 on:
   pull_request:
@@ -6,19 +6,9 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  analyze:
-    name: Analyze
+  validate:
+    name: Validate Podfile
     runs-on: macos-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'ruby' ]
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -32,18 +22,4 @@ jobs:
       working-directory: chat-v2-sample/CocoaPods
       run: |
         pod install --repo-update
-
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v4
-      with:
-        languages: ${{ matrix.language }}
-        ram: 8192
-        threads: 4
-        source-root: chat-v2-sample/CocoaPods
-
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v4
-      continue-on-error: true
-      with:
-        category: "/language:${{matrix.language}}"
 
