@@ -1,0 +1,48 @@
+name: "CodeQL"
+
+on:
+  pull_request:
+    branches: [ "main" ]
+    types: [opened, synchronize]
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: macos-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'ruby' ]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v4
+      with:
+        languages: ${{ matrix.language }}
+        ram: 8192
+        threads: 4
+        source-root: chat-v2-sample/CocoaPods
+
+    - name: Autobuild (Ruby extraction)
+      uses: github/codeql-action/autobuild@v4
+      continue-on-error: true
+
+    - name: Validate Podfile
+      working-directory: chat-v2-sample/CocoaPods
+      run: |
+        ruby -c Podfile
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v4
+      continue-on-error: true
+      with:
+        category: "/language:${{matrix.language}}"
+
