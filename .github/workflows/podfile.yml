@@ -1,0 +1,25 @@
+name: "Validate Podfile"
+
+on:
+  pull_request:
+    branches: [ "main" ]
+    types: [opened, synchronize]
+
+jobs:
+  validate:
+    name: Validate Podfile
+    runs-on: macos-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Validate Podfile syntax
+      working-directory: chat-v2-sample/CocoaPods
+      run: |
+        ruby -c Podfile
+
+    - name: Validate pod install
+      working-directory: chat-v2-sample/CocoaPods
+      run: |
+        pod install --repo-update
+

@@ -18,7 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let options = KustomerOptions()
     options.logLevels = [.debug, .error]
     options.pushEnvironment = .development
-    _ = Kustomer.configure(apiKey: Constants.apiKey, options: options, launchOptions: launchOptions)
+    _ = Kustomer.setup(apiKey: Constants.apiKey, options: options, launchOptions: launchOptions) { result in
+      switch result {
+      case .success:
+        print("✅ Configuration succeeded")
+      case .failure(let error):
+        print("⚠️ Config error: \(error.localizedDescription)")
+      }
+    }
     return true
   }
 
