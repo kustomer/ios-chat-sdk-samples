@@ -1,4 +1,4 @@
-# swift-chat-v2-sample
+# iOS Sample App
 
 This sample app demonstrates the login and describe functionality available for [Kustomer Chat 2.0](https://help.kustomer.com/introduction-kustomer-chat-H1xk1Gb8v) in the [Kustomer iOS Chat SDK](https://developer.kustomer.com/chat-sdk/v2-iOS/docs).
 
