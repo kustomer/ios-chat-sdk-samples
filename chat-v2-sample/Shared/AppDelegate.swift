@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Configure Kustomer with your API Key
     // Make sure to do this in your app delegate!
     let options = KustomerOptions()
-    options.logLevels = [.debug, .error]
+    options.logLevels = KustomerLogTypeAll
     options.pushEnvironment = .development
     _ = Kustomer.setup(apiKey: Constants.apiKey, options: options, launchOptions: launchOptions) { result in
       switch result {
