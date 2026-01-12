@@ -138,8 +138,6 @@
 			dependencies = (
 			);
 			name = "swift-chat-v2-sample";
-			packageProductDependencies = (
-			);
 			productName = "swift-chat-v2-sample";
 			productReference = 88FA6FC926C44CA6004ED8BC /* swift-chat-v2-sample.app */;
 			productType = "com.apple.product-type.application";
@@ -167,8 +165,6 @@
 				Base,
 			);
 			mainGroup = 88FA6FC026C44CA6004ED8BC;
-			packageReferences = (
-			);
 			productRefGroup = 88FA6FCA26C44CA6004ED8BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,13 +218,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-swift-chat-v2-sample/Pods-swift-chat-v2-sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-swift-chat-v2-sample/Pods-swift-chat-v2-sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
