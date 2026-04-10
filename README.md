@@ -5,6 +5,11 @@ A repository to hold sample apps using the Kustomer Chat SDK v2
 
 - [swift_chat_v2_sample](https://github.com/kustomer/ios-chat-sdk-samples/tree/main/chat-v2-sample): Sample app writen in Swift that highlights using the Kustomer Chat SDK.
 
+## Chat Lifecycle
+
+Sample apps exercise the **iOS chat SDK** end-to-end (HTTP + **PubNub**). Behavior and channel naming follow **chat-api**; see [pubnub.md](https://github.com/kustomer/chat-api/blob/master/pubnub.md).
+
+**See also:** [chat-api — Chat Lifecycle](https://github.com/kustomer/chat-api/blob/master/README.md#chat-lifecycle) · [chat-sdk-ios](https://github.com/kustomer/chat-sdk-ios)
 
 Requirements
 You need to have a Kustomer account as developer or customer to access the Kustomer Platform in order to use the sample apps. Please visit the [Kustomer website](https://kustomer.com) for more information.
