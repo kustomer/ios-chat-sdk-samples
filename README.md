@@ -1,10 +1,18 @@
 # ios-chat-sdk-samples
+
+**What this is:** **Sample iOS application(s)** for **testing and validating** the [**Kustomer Chat SDK for iOS (v2)**](https://github.com/kustomer/chat-sdk-ios)—integration flows, session bootstrap over HTTP, and **PubNub** realtime in a real app shell. This repo is **not** the SDK library, not a substitute for the [Developer Portal](https://developer.kustomer.com/), and the bundled apps are **not** production-ready products as-is.
+
 A repository to hold sample apps using the Kustomer Chat SDK v2
 
 [![CodeQL](https://github.com/kustomer/ios-chat-sdk-samples/actions/workflows/codeql.yml/badge.svg)](https://github.com/kustomer/ios-chat-sdk-samples/actions/workflows/codeql.yml)
 
-- [swift_chat_v2_sample](https://github.com/kustomer/ios-chat-sdk-samples/tree/main/chat-v2-sample): Sample app writen in Swift that highlights using the Kustomer Chat SDK.
+- [swift_chat_v2_sample](https://github.com/kustomer/ios-chat-sdk-samples/tree/main/chat-v2-sample): Sample app written in Swift that highlights using the Kustomer Chat SDK.
 
+## Chat Lifecycle
+
+Sample apps exercise the **iOS chat SDK** end-to-end (HTTP + **PubNub**). Behavior and channel naming follow **chat-api**; see [pubnub.md](https://github.com/kustomer/chat-api/blob/master/pubnub.md).
+
+**See also:** [Chat ecosystem map — `CHAT_CONNECTIONS.md`](https://github.com/kustomer/chat-api/blob/master/docs/CHAT_CONNECTIONS.md) · [chat-api — Chat Lifecycle](https://github.com/kustomer/chat-api/blob/master/README.md#chat-lifecycle) · [chat-sdk-ios](https://github.com/kustomer/chat-sdk-ios)
 
 Requirements
 You need to have a Kustomer account as developer or customer to access the Kustomer Platform in order to use the sample apps. Please visit the [Kustomer website](https://kustomer.com) for more information.
