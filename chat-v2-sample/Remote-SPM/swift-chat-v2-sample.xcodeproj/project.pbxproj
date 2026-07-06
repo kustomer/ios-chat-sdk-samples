@@ -398,7 +398,7 @@
 			repositoryURL = "https://github.com/kustomer/kustomer-ios-spm";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 7.2.2;
+				minimumVersion = 7.2.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
